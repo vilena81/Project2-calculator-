@@ -23,16 +23,11 @@ document.addEventListener("keydown", event => {
 
 function calc(value) {
     if (value.match(/=|Enter/)) {
-        try {
-            output.textContent = Math.trunc(math.evaluate(output.textContent))
-        } catch {
-            let oldValue = output.textContent
-            let newValue = 'недопустимое выражение'
-            output.textContent = newValue
-            setTimeout(() => {
-                output.textContent = oldValue
-            }, 1500)
-        }
+        
+            
+            output.textContent=eval(output.textContent)
+            // output.textContent = Math.trunc(Math.evaluate(output.textContent))
+        
     } else if (value === "C") {
         output.textContent = ""
     } else if(value.match(/CE|Backspace/)){

@@ -1,18 +1,29 @@
-let result=document.getElementById("foo")
-let Calculat=(number)=>{
-    result.value+=number;
+
+let result = document.getElementById("result");
+
+let Calculate = (number) => {
+    result.value += number;
+};
+
+let Result = () => {
+    result.value = eval(result.value);
+};
+
+function clr() {
+    result.value = "";
 }
-let Result=()=>{
-try{
-    result.value=eval(result.value)
-    }
-catch(err){
-    alert("enter valid input")
+
+function del() {
+    result.value = result.value.toString().slice(0, -1);
 }
-}
-function clr(){
-    result.value='';
-}
-function del(){
-    result.value =result.value.toString().slice(0,-1);
-} 
+
+
+ 
+
+
+
+
+
+
+
+

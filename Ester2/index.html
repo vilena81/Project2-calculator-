@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>My first Calculator</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-icon" href="icon/4470502.png">
     </head>
     <body>
         <div class="container">
             <div class="calculator">
-               <input type="text" id="foo" name="dis" readonly value="0">
+               <input type="text" id="result" name="dis" readonly value="0">
                <button onclick="clr()">AC</button>
                <button onclick="del()">del</button>
-               <button onclick="Calculat('.')">.</button>
-               <button onclick="Calculat('/')">/</button>
-               <button onclick="Calculat(7)">7</button>
-               <button onclick="Calculat(8)">8</button>
-               <button onclick="Calculat(9)">9</button>
-               <button onclick="Calculat('*')">*</button>
-               <button onclick="Calculat(4)">4</button>
-               <button onclick="Calculat(5)">5</button>
-               <button onclick="Calculat(6)">6</button>
-               <button onclick="Calculat('-')">-</button>
-               <button onclick="Calculat(1)">1</button>
-               <button onclick="Calculat(2)">2</button>
-               <button onclick="Calculat(3)">3</button>
-               <button onclick="Calculat('+')">+</button>
-               <button onclick="Calculat('00')">00</button>
-               <button onclick="Calculat(0)">0</button>
+               <button onclick="Calculate('.')">.</button>
+               <button onclick="Calculate('/')">/</button>
+               <button onclick="Calculate(7)">7</button>
+               <button onclick="Calculate(8)">8</button>
+               <button onclick="Calculate(9)">9</button>
+               <button onclick="Calculate('*')">*</button>
+               <button onclick="Calculate(4)">4</button>
+               <button onclick="Calculate(5)">5</button>
+               <button onclick="Calculate(6)">6</button>
+               <button onclick="Calculate('-')">-</button>
+               <button onclick="Calculate(1)">1</button>
+               <button onclick="Calculate(2)">2</button>
+               <button onclick="Calculate(3)">3</button>
+               <button onclick="Calculate('+')">+</button>
+               <button onclick="Calculate('00')">00</button>
+               <button onclick="Calculate(0)">0</button>
                <button class="i" onclick="Result()">=</button>
             </div>
         </div>
+      
         <script src="./main.js"></script>
     </body>
 </html>

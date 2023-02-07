@@ -29,8 +29,18 @@ let Calculate = (number) => {
 };
 
 let Result = () => {
-    result.value = eval(result.value);
+    let elements = result.value.split('+');
+    let num1 = parseInt(elements[0]);
+    let num2 = parseInt(elements[1]);
+    let sum = num1 + num2;
+    console.log(num1,num2,sum)
+    //result.value = eval(result.value);
+    result.value=sum
 };
+    
+  
+
+
 
 function clr() {
     result.value = "";

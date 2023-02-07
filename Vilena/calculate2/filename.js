@@ -17,13 +17,12 @@ window.addEventListener("load", function OnWidowLoaded() {
         calc.append(signElement);
     })
 
-
     const allBtns = document.getElementsByClassName("btn");
     allBtns[allBtns.length - 1].id = "equal";
-    
+
     const allBtns1 = document.getElementsByClassName("btn");
-    allBtns1[[allBtns.length - 1]- 1].id = "clear";
-   
+    allBtns1[[allBtns.length - 1] - 1].id = "clear";
+
 
     document.querySelectorAll('#calc .btn').forEach(function (button) {
         button.addEventListener('click', onButtonClick);
@@ -36,7 +35,7 @@ window.addEventListener("load", function OnWidowLoaded() {
 
         } else if (e.target.textContent === '=') {
             // output.textContent = eval(output.textContent);
-            let elements=output.textContent
+            let elements = output.textContent
             if (elements.includes("+")) {
                 let elements = output.textContent.split('+');
                 let num1 = parseFloat(elements[0]);
@@ -57,10 +56,14 @@ window.addEventListener("load", function OnWidowLoaded() {
             }
             else if (elements.includes("/")) {
                 let elements = output.textContent.split('/');
-                let num1 = parseInt(elements[0]);
+                let num1 = parseFloat(elements[0]);
                 let num2 = parseFloat(elements[1]);
                 output.textContent = num1 / num2;
             }
+
+        }
+        else if (output.textContent === '%') {
+            output.textContent = eval(persents(output.textContent))
         }
         else if (output.textContent === '0') {
             output.textContent = e.target.textContent;

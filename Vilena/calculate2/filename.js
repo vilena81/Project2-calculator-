@@ -35,7 +35,7 @@ window.addEventListener("load", function OnWidowLoaded() {
 
         } else if (e.target.textContent === '=') {
             // output.textContent = eval(output.textContent);
-            let elements = output.textContent
+                let elements = output.textContent
             if (elements.includes("+")) {
                 let elements = output.textContent.split('+');
                 let num1 = parseFloat(elements[0]);
@@ -63,7 +63,12 @@ window.addEventListener("load", function OnWidowLoaded() {
 
         }
         else if (output.textContent === '%') {
-            output.textContent = eval(persents(output.textContent))
+            // output.textContent = eval(persents(output.textContent))
+
+            let elements = output.textContent.split('%');
+            let num1 = parseFloat(elements[0]);
+            let num2 = parseFloat(elements[1]);
+            output.textContent = num1 * 100 / num2;
         }
         else if (output.textContent === '0') {
             output.textContent = e.target.textContent;

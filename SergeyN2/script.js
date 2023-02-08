@@ -5,7 +5,7 @@ class Calculator {
     this.downrowTextElement = downrowTextElement;
     this.clear()
   }
-  clear (){
+  clear (){                                                       //meth,,obj
     this.downrow = ""
     this.uprow = ""
     
@@ -30,11 +30,12 @@ class Calculator {
       return
     }
     if(this.uprow !== ""){
-      this.compute_hash()
+      this.compute_hash()               //gorcoxutyun aneluc heto ete uzumenq krkin +-/kam * katarel kkaroxananq sharunakel, qani vor arajin if-ov kazatenq nerqevi toxy ira arjeqy poxancelov verevi toxin
+                                        
     }
-    this.operation = operation
-    this.uprow = this.downrow
-    this.downrow = ''
+    this.operation = operation      //operation butonin click aneluc khaskana inch value ashxatacnel (nshanneri)     
+    this.uprow = this.downrow          // mentq talis enq nerqevi toxi valuen verevi toxin  ->
+    this.downrow = ''           // ev sexmelov operation battoni vra nerqevi toxy kmaqrvi , bayc minch ayd grvac tvery kpahpanven verevi toxi mej
     
   }
   compute_hash(){
@@ -61,7 +62,7 @@ class Calculator {
       default:
         return
     }
-    this.downrow = computation
+    this.downrow = computation        // nerqevi toxum ktpvi verjnakan ardyunqy
     this.operation = undefined
     this.uprow = ""
 
@@ -91,7 +92,7 @@ const calculator = new Calculator (uprowTextElement , downrowTextElement);
 numberbtn.forEach(button => { 
   button.addEventListener( 'click' , () => {
     calculator.addnumber(button.innerText)
-    calculator.updateDisplay()
+    calculator.updateDisplay()            //ekranin kavelana mer sexmac buttony amen angam erb menq click anent tverin ()
   })
 })
 

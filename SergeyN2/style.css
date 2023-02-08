@@ -60,3 +60,197 @@ body {
   color:white;
   font-size: 2.4rem;
 }
+
+.svg0{
+	position: absolute;
+	top: 3%;
+	left: 2%;
+	width: 65px;
+	height: 85px;
+	z-index: -1;
+	animation: svgZero 6s ease-in-out 0s infinite;
+	animation-direction:alternate;
+}
+@keyframes svgZero{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg1{
+	position: absolute;
+	top: 3%;
+  left: 14%;
+	width: 60px;
+	height: 85px;
+	z-index: -1;
+	animation: svgOne 6s ease-in-out 0s infinite;
+	animation-direction:alternate-reverse;
+}
+@keyframes svgOne{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg2{
+	position: absolute;
+	top: 3%;
+	left: 25%;
+	width: 65px;
+	height: 85px;
+	z-index: -1;
+	animation: svgTwo 6s ease-in-out 0s infinite;
+	animation-direction:alternate;
+}
+@keyframes svgTwo{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg3{
+	position: absolute;
+	top: 3%;
+	left: 65%;
+	width: 70px;
+	height: 85px;
+	z-index: -1;
+	animation: svgThree 6s ease-in-out 0s infinite;
+	animation-direction:alternate-reverse;
+}
+@keyframes svgThree{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg4{
+	position: absolute;
+	top: 3%;
+	left: 79%;
+	width: 65px;
+	height: 85px;
+	z-index: -1;
+	animation: svgFour 6s ease-in-out 0s infinite;
+	animation-direction:alternate;
+}
+@keyframes svgFour{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg5{
+	position: absolute;
+	top: 3%;
+	left: 90%;
+	width: 90px;
+	height: 110px;
+	z-index: -1;
+	animation: svgFive 6s ease-in-out 0s infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes svgFive{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg6{
+	position: absolute;
+	bottom: 3%;
+	left: 10%;
+	width: 70px;
+	height: 90px;
+	z-index: -1;
+	animation: svgSix 6s ease-in-out 0s infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes svgSix{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg7{
+	position: absolute;
+	bottom: 1%;
+	left: 25%;
+	width: 70px;
+	height: 110px;
+	z-index: -1;
+	animation: svgSeven 6s ease-in-out 0s infinite;
+	animation-direction: alternate;
+  
+}
+@keyframes svgSeven{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(90deg);
+	}
+}
+
+
+
+.svg8{
+	position: absolute;
+	bottom: 1%;
+	left: 65%;
+	width: 70px;
+	height: 100px;
+	z-index: -1;
+	animation: svgEight 6s ease-in-out 0s infinite;
+	animation-direction: alternate;
+}
+@keyframes svgEight{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
+
+.svg9{
+	position: absolute;
+	bottom: 1%;
+	left: 85%;
+	width: 70px;
+	height: 100px;
+	z-index: -1;
+	animation: svgNine 6s ease-in-out 0s infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes svgNine{
+	from{
+		transform: translate(0) rotate(0);
+	}
+	to{
+		transform: translateY(-100px) rotate(130deg);
+	}
+}
